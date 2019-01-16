@@ -36,3 +36,6 @@ RUN echo "# Installing Nodejs" && \
   npm install -g npm@latest && \
   npm cache clear -f && \
   npm install -g @angular/cli
+  
+# Create /app folder
+RUN mkdir /app || true
